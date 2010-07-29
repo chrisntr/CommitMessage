@@ -1,0 +1,12 @@
+<html> 
+<head>  
+	<title>CommitMessage.com</title>  
+	<% content_for :stylesheets do %>  
+		img.comingsoon { display: block; margin: auto; }
+	<% end -%>
+	<style type="text/css"><%= yield :stylesheets %></style> 
+</head>
+<body>
+<div id="content"><%= yield(:content) or yield %></div> 
+</body> 
+</html> 
